@@ -1,14 +1,20 @@
-body {
+/* @media only screen and (min-width:1240px){ */
+  body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
-  .container {
+  .row-launching-fitme-pro-e{
+	margin: 0px;
+  }
+  .row-launching-fitme-pro-e .hide-for-small{
+	padding: 0px;
+  }
+  .container-launching-fitme-pro-e {
     display: flex;
     padding: 30px;
   }
   
-  .column {
+  .column-launching-fitme-pro-e {
     width: 50%;
     box-sizing: border-box;
     transition-duration: 1s;
@@ -17,100 +23,206 @@ body {
     box-shadow: #636363;
   }
   
-  #column1 {
+  #column1LaunchingFitme {
     /* background-color: #78B8F2; */
     color: white;
     background-color: rgb(22, 62, 122); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, rgb(57, 107, 181), rgb(3, 26, 96));
+    background-image: url('https://ik.imagekit.io/usg7970jp2/Fitme%20Type%20E%20Launching%20Jan%202024/12067358_4882066.jpg?updatedAt=1705549447089');
+    background-size: cover;
     height: 500px;
     border-radius: 20px 0px 0px 20px;
     /* HOVER OFF */
     -webkit-transition: 2s;
   }
   
-  #column1 h3{
+  #column1LaunchingFitme h3{
     position: absolute;
-    top: 35%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 22%;
+    /* HOVER OFF */
+    -webkit-transition: 1s;
+    /* transform: translate(-50%, -50%); */
   }
 
-  #column1 img{
+  #column1LaunchingFitme .fitme-u-e-title{
+    width: 110px;
+    position: absolute;
+    top: 55%;
+    left: 21%;
+    /* HOVER OFF */
+    -webkit-transition: 1s;
+    /* transform: translate(-50%, -50%); */
+  }
+
+  #column1LaunchingFitme #fitmeUE{
     width: 330px;
     position: absolute;
-    top: 36%;
-    left: 29%;
-    transform: rotate(25deg);
+    top: 10%;
+    left: 13%;
+    /* transform: rotate(25deg); */
     opacity: 1;
     /* HOVER OFF */
-    -webkit-transition: 3s;
+    -webkit-transition: 2s;
   }
 
-  #column1:hover img{
-    width: 390px;
+  #column1LaunchingFitme:hover #fitmeUE{
+    width: 500px;
     position: absolute;
-    top: 36%;
-    left: 40%;
+    top: 20%;
+    left: 30%;
     transition-duration: 1.5s;
+    transform: rotate(25deg);
+  }
+  #column1LaunchingFitme .fitme-u-e-description{
+    opacity: 0;
+    margin: 55px auto 0px 8px;
+    /* width: 300px; */
+    /* position: absolute;
+    top: 14%;
+    left: 14.6%; */
+    text-align: left;
+    transition-duration: 1.5s;
+    /* HOVER OFF */
+    -webkit-transition: 1s;
+    /* transform: translate(-50%, -50%); */
+  }
+  #column1LaunchingFitme ul{
+    font-size: 19px;
+    padding-top: 165px;
+    opacity: 0;
+    width: 400px;
+    padding-left: 20px;
+    line-height: 30px;
+  }
+  #column1LaunchingFitme:hover .fitme-u-e-description,#column1LaunchingFitme:hover ul{
+    transition-duration: 3s;
+    opacity: 1;
   }
 
-  body:has(#column2:hover) #fitmeUMax{
-    opacity: 0; /* Menyembunyikan gambar saat column2 dihover */
+  body:has(#column2LaunchingFitme:hover) #fitmeUE{
+    opacity: 1; /* Menyembunyikan gambar saat column2 dihover */
     transition-duration: 0.1s;
   }
   
-  #column2 {
+  #column2LaunchingFitme {
     background-color: #FFA8FB; /* Warna untuk kolom 2 */
+    background-image: url('https://ik.imagekit.io/usg7970jp2/Fitme%20Type%20E%20Launching%20Jan%202024/17348619_5816188.jpg?updatedAt=1705549232495');
+    background-size: cover;
     height: 500px;
     border-radius: 0px 20px 20px 0px;
   }
 
-  #column2 h3{
+  #column2LaunchingFitme .fitme-pro-e-title{
+    width: 104px;
+    /* color: white; */
     position: absolute;
-    top: 35%;
+    top: 57%;
     left: 75%;
     /* HOVER OFF */
     -webkit-transition: 1s;
     transform: translate(-50%, -50%);
-    
   }
 
-  #column2 #fitmeProS{
-    width: 320px;
-    position: absolute;
-    top: 36%;
-    right: 0.5%;
+
+  #column2LaunchingFitme .fitme-pro-e-description{
+    color: white;
+    margin: 55px auto 0px 8px;
+    /* transition-duration: 1.5s; */
     /* HOVER OFF */
     -webkit-transition: 1s;
-    transform: rotate(25deg);
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+  }
+
+  #column2LaunchingFitme ul{
+    color: white;
+    font-size: 19px;
+    padding-top: 166px;
+    opacity: 0;
+    width: 400px;
+    padding-left: 20px;
+    line-height: 30px;
+  }
+
+  #column2LaunchingFitme:hover .fitme-pro-e-description,#column2LaunchingFitme:hover ul{
+    color: white;
+    transition-duration: 3s;
     opacity: 1;
   }
 
-  #column2:hover #fitmeProS{
-    width: 400px;
+  #column2LaunchingFitme #fitmeProE{
+    width: 300px;
+    position: absolute;
+    top: 12%;
+    right: 13%;
+    /* HOVER OFF */
+    -webkit-transition: 1s;
+    /* transform: rotate(-3deg); */
+    opacity: 1;
+  }
+
+  #column2LaunchingFitme:hover #fitmeProE{
+    width: 450px;
+    top: 20%;
+    right: -1%;
     transition-duration: 1.5s;
+    transform: rotate(25deg);
   }
   
-  #column1:hover {
+  #column1LaunchingFitme:hover {
     width: 80%;
     transition-duration: 1.5s;
   }
 
-  #column1:hover h3{
-    position: absolute;
-    top: 8%;
-    left: 8%;
+  #column1LaunchingFitme:hover .fitme-u-e-title{
+    width: 180px;
+    display: block;
+    top: 15%;
+    left: 4%;
     transition-duration: 1.5s;
   }
   
-  #column2:hover {
+  #column2LaunchingFitme:hover {
     width: 80%;
   }
-
-  #column2:hover h3{
+/* } */
+@media only screen and (min-width:1240px){
+  #column2LaunchingFitme:hover .fitme-pro-e-title{
+    width: 160px;
     position: absolute;
-    top: 8%;
-    left: 44%;
+    top: 20%;
+    left: 48.5%;
+    font-size: 24px;
     transition-duration: 1.8s;
   }
-  
+}  
+@media only screen and (min-width:1190px) and (max-width: 1239px){
+  #column2LaunchingFitme:hover .fitme-pro-e-title{
+    width: 160px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 24px;
+    transition-duration: 1.8s;
+  }
+}
+@media only screen and (min-width:1170px) and (max-width: 1189px){
+  #column2LaunchingFitme:hover .fitme-pro-e-title{
+    width: 160px;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    font-size: 24px;
+    transition-duration: 1.8s;
+  }
+}
+@media only screen and (min-width:1150px) and (max-width: 1169px){
+  #column2LaunchingFitme:hover .fitme-pro-e-title{
+    width: 160px;
+    position: absolute;
+    top: 20%;
+    left: 54%;
+    font-size: 24px;
+    transition-duration: 1.8s;
+  }
+}
